@@ -22,17 +22,19 @@ button:hover{
     background-color: darkgrey;
 }
 .variables{
+    width: 350px;
     display: block;
 }
 input{
-    width: 100%;
+    width: 60%;
     padding: 10px;
+    margin-bottom: 5px;
 }
 .operaciones{
     display: block;
 }
 .resultado{
-    width: 100%;
+    width: 60%;
     display: block;
     text-align: center;
     padding: 20px;
