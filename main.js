@@ -1,9 +1,9 @@
-function circunferencia(){
-    let  Pi = 3.14163333;
-    let longitud = 2*Pi*parseInt(document.getElementById('radio').value);
-    let area = Pi*parseInt(document.getElementById('radio').value)**2;
+function velocidad(){
+    let espacio = 2*1000;
+    let tiempo = 5*60;
+    let velocidad = espacio/tiempo;
     
-    document.getElementById('resultado').innerHTML="Longitud: "+longitud+"<br>"+"Área: "+area;
+    document.getElementById('resultado').innerHTML="La velocidad es de: "+velocidad+" m/s";
 } 
 
 function limpiar(){
