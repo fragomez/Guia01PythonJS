@@ -10,18 +10,14 @@
     <title>Ejercicios de Python en JavaScript - Guía 01</title>
 </head>
 <body>
-<h1>1. Escribir un programa que sume, reste, multiplique y divida dos números</h1>
+<h1>2. Escribir un programa que calcule el área de un rectángulo:</h1>
 <div class="contenedor">
     <div class="variables">
         <form name="" id="miCalculadora">
-            <input type="text" id="numero1" class="numero1" placeholder="Ingrese el número 1" autofocus></p>
-            <input type="text" id="numero2" class="numero2" placeholder="Ingrese el número 2"></p>
+            <input type="number" id="lado1" class="numero1" placeholder="Ingrese el valor del lado 1" autofocus></p>
+            <input type="number" id="lado2" class="numero2" placeholder="Ingrese el valor del lado 2"></p>
             <div class="operaciones">
-                <button type="button" class="sumar" onclick="sumar();">+</button>
-                <button type="button" class="restar" onclick="restar();">-</button>
-                <button type="button" class="multiplicar" onclick="multiplicar();">x</button>
-                <button type="button" class="dividir" onclick="dividir();">/</button>
-                <button type="button" class="limpiar" onclick="limpiar();">Limpiar</button>
+                <button type="button" onclick="area();">Calcular</button>
             </div>
             <div class="resultado" id="resultado"></div>
         </form>
