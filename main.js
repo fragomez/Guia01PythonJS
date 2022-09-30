@@ -1,9 +1,8 @@
-function velocidad(){
-    let espacio = 2*1000;
-    let tiempo = 5*60;
-    let velocidad = espacio/tiempo;
+function esfera(){
+    let Pi = 3.14163333;
+    let volumen = 4/3 * Pi * parseInt(document.getElementById('radio').value**3);
     
-    document.getElementById('resultado').innerHTML="La velocidad es de: "+velocidad+" m/s";
+    document.getElementById('resultado').innerHTML="El volumen de la esfera es: "+volumen+" m3";
 } 
 
 function limpiar(){
