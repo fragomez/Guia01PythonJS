@@ -1,8 +1,9 @@
-function triangulo(){
-    let base = parseInt(document.getElementById('base').value);
-    let altura = parseInt(document.getElementById('altura').value);
-    area = (base*altura)/2;
-    document.getElementById('resultado').innerHTML=area;
+function circunferencia(){
+    let  Pi = 3.14163333;
+    let longitud = 2*Pi*parseInt(document.getElementById('radio').value);
+    let area = Pi*parseInt(document.getElementById('radio').value)**2;
+    
+    document.getElementById('resultado').innerHTML="Longitud: "+longitud+"<br>"+"Área: "+area;
 } 
 
 function limpiar(){
