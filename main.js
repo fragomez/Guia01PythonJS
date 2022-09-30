@@ -1,3 +1,7 @@
+/* Función flecha
+let limpiar = () => document.getElementById('miCalculadora').reset(); document.getElementById('resultado').innerHTML="";
+return limpiar; */
+
 function limpiar(){
     document.getElementById('miCalculadora').reset();
     document.getElementById('resultado').innerHTML= "";
