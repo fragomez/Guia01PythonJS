@@ -1,12 +1,8 @@
-function llamadas(){
-    const minuto = 355;
-    const iva = 0.20;
-    let cantidad = parseInt(document.getElementById('cantidad').value);
-    let minutos = cantidad * minuto;
-    let subtotal = minutos * iva;
-    let total = minutos + subtotal;
+function calcular(){
+    let velocidad = parseInt(document.getElementById('velocidad').value);
+    let velmts = velocidad / 3.6;
     
-    document.getElementById('resultado').innerHTML="$"+total+" pesos";
+    document.getElementById('resultado').innerHTML=velmts+" m/s";
 } 
 
 function limpiar(){
