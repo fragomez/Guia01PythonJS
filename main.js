@@ -1,11 +1,14 @@
 function calcular(){
-    const pagoHora = 15300;
+    const sueldoBase = 1014980;
+    const comision = 0.10;
+
+    let v1 = parseInt(document.getElementById('v1').value);
+    let v2 = parseInt(document.getElementById('v1').value);
+    let v3 = parseInt(document.getElementById('v1').value);
+    let subTotal = (v1 + v2 + v3) * comision;
+    let total = sueldoBase+ subTotal;
     
-    let nombre = document.getElementById('nombre').value;
-    let horas = parseInt(document.getElementById('horas').value);
-    let total = horas * pagoHora; 
-    
-    document.getElementById('resultado').innerHTML="El sueldo total de "+nombre+" es de $" + total + " pesos";
+    document.getElementById('resultado').innerHTML="El sueldo total es de $" + total + " pesos <br>Comisión: $"+subTotal+" pesos";
 } 
 
 function limpiar(){
