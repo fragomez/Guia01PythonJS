@@ -10,13 +10,15 @@
     <title>Ejercicios de Python en JavaScript - Guía 01</title>
 </head>
 <body>
-<h1>7. Escribir un programa que calcule el volumen de una esfera:</h1>
+<h1>8. Escribir un programa que evalúe la siguiente expresión: (a+7*c)/(b+2-a)+2*b</h1>
 <div class="contenedor">
     <div class="variables">
         <form name="" id="miCalculadora">
-            <input type="text" id="radio" placeholder="Ingrese el radio de la circunferencia" autofocus>
+            <input type="text" id="valorA" placeholder="Ingrese el valor de a" autofocus>
+            <input type="text" id="valorB" placeholder="Ingrese el valor de b">
+            <input type="text" id="valorC" placeholder="Ingrese el valor de c">
             <div class="operaciones">
-                <button type="button" onclick="esfera();">Calcular</button>
+                <button type="button" onclick="ecuacion();">Calcular</button>
                 <button type="button" onclick="limpiar();">Limpiar</button>
             </div>
             <div class="resultado" id="resultado"></div>

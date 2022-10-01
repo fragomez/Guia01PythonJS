@@ -1,8 +1,10 @@
-function esfera(){
-    let Pi = 3.14163333;
-    let volumen = 4/3 * Pi * parseInt(document.getElementById('radio').value**3);
+function ecuacion(){
+    let a = parseInt(document.getElementById('valorA').value);
+    let b = parseInt(document.getElementById('valorB').value);
+    let c = parseInt(document.getElementById('valorC').value);
+    let resultado = (a+7*c)/(b+2-a)+2*b;
     
-    document.getElementById('resultado').innerHTML="El volumen de la esfera es: "+volumen+" m3";
+    document.getElementById('resultado').innerHTML=resultado;
 } 
 
 function limpiar(){
