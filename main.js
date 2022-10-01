@@ -1,8 +1,10 @@
 function calcular(){
-    let velocidad = parseInt(document.getElementById('velocidad').value);
-    let velmts = velocidad / 3.6;
+    const descuento = 0.10;
+    let costo = parseInt(document.getElementById('costo').value);
+    let subtotal = costo*descuento;
+    let total = costo - subtotal;
     
-    document.getElementById('resultado').innerHTML=velmts+" m/s";
+    document.getElementById('resultado').innerHTML="$"+total+" pesos";
 } 
 
 function limpiar(){
