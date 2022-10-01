@@ -1,13 +1,11 @@
 function ecuacion(){
     const x = 15;
-    let a = parseInt(document.getElementById('valorA').value);
-    let b = parseInt(document.getElementById('valorB').value);
-    let c = parseInt(document.getElementById('valorC').value);
-    let formula = a *  Math.pow(x,2) + b * x + c;
-    formula = Math.sqrt(formula);
+    let altura = parseInt(document.getElementById('altura').value);
+    let largo = parseInt(document.getElementById('largo').value);
+    let ancho = parseInt(document.getElementById('ancho').value);
+    let volumen = (4/3) * Math.PI * altura * largo * ancho;
     
-    
-    document.getElementById('resultado').innerHTML=formula;
+    document.getElementById('resultado').innerHTML=volumen;
 } 
 
 function limpiar(){
