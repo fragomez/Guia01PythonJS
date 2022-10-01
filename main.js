@@ -1,11 +1,12 @@
-function ecuacion(){
-    const x = 15;
-    let altura = parseInt(document.getElementById('altura').value);
-    let largo = parseInt(document.getElementById('largo').value);
-    let ancho = parseInt(document.getElementById('ancho').value);
-    let volumen = (4/3) * Math.PI * altura * largo * ancho;
+function llamadas(){
+    const minuto = 355;
+    const iva = 0.20;
+    let cantidad = parseInt(document.getElementById('cantidad').value);
+    let minutos = cantidad * minuto;
+    let subtotal = minutos * iva;
+    let total = minutos + subtotal;
     
-    document.getElementById('resultado').innerHTML=volumen;
+    document.getElementById('resultado').innerHTML="$"+total+" pesos";
 } 
 
 function limpiar(){
