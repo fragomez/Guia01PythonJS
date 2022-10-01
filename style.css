@@ -26,7 +26,7 @@ button:hover{
     display: block;
 }
 input{
-    width: 60%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 5px;
 }
@@ -34,10 +34,10 @@ input{
     display: block;
 }
 .resultado{
-    width: 60%;
+    width: 100%;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    font-size: 5rem;
+    font-size: 2rem;
     color: gray;
 }
