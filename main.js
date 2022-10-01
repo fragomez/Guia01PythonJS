@@ -1,11 +1,13 @@
 function ecuacion(){
-    let Pi = 3.14163333;
-    let radio = parseInt(document.getElementById('radio').value);
-    let altura = parseInt(document.getElementById('altura').value);
-    let area = (2*(Pi * radio**2)) + ((2*Pi*radio)*altura);
-    let volumen = (Pi*radio**2)*altura;
+    const x = 15;
+    let a = parseInt(document.getElementById('valorA').value);
+    let b = parseInt(document.getElementById('valorB').value);
+    let c = parseInt(document.getElementById('valorC').value);
+    let formula = a *  Math.pow(x,2) + b * x + c;
+    formula = Math.sqrt(formula);
     
-    document.getElementById('resultado').innerHTML="Área del cilindro: "+area+"<br>"+"Volumen del cilindro: "+volumen;
+    
+    document.getElementById('resultado').innerHTML=formula;
 } 
 
 function limpiar(){
